@@ -1,7 +1,7 @@
 # coco-eval-free
 coco eval by custom category to multi object classification
 # modified the 26th line in coco_detection.py
-if category is two, then id index is [0,1], as following
+if category is two, then id index is [0,1], as following:
 
 self.cat_ids = [0, 1] ##Custom category index
 
