@@ -75,13 +75,7 @@ class CocoDataset(BaseDataset):
                 gt_bboxes_ignore.append(bbox)
             else:
                 gt_bboxes.append(bbox)
-                #two classes label
-                #if(self.cat2label[ann['category_id']] !=0):
-                #    gt_labels.append(1)
-                    #print(gt_labels)
-                #else:
                 gt_labels.append(self.cat2label[ann['category_id']])
-                    #print(self.cat2label[ann['category_id']])
                 if self.use_instance_mask:
                     gt_masks.append(self.coco_api.annToMask(ann))
                 if self.use_keypoint:
@@ -120,13 +114,12 @@ class CocoDataset(BaseDataset):
         if img is None:
             print('image {} read failed.'.format(image_path))
             raise FileNotFoundError('Cant load image! Please check image path!')
-        ann = self.get_img_annotation(idx)
+        ann = self.get_img_annotation(idx)    
         # 2 classes label
         lablist=ann['labels']
         #print(lablist)
         twolist=np.array([1 if i !=0 else i for i in lablist])
-        #print(twolist)
-        #print('ok')
+
         meta = dict(img=img,
                     img_info=img_info,
                     gt_bboxes=ann['bboxes'],
