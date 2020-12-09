@@ -1,4 +1,4 @@
-# coco-eval-free
+# coco-eval-free and training with custom category 
 coco eval by custom category to multi object classification
 
 if category is two, then id index is [0,1], as following:
