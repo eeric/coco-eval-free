@@ -2,7 +2,7 @@
 coco eval by custom category to multi object classification
 
 if category is two, then id index is [0,1], as following:
-## modified two lines in coco.py
+## modified two lines in coco.py to training on line, while not change to label
 117th line added
 
         # 2 classes label
