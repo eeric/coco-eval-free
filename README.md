@@ -27,6 +27,12 @@ original line: self.cat_ids = dataset.cat_ids
 self.params.catIds = [0,1] #sorted(cocoGt.getCatIds())
 
 original line: self.params.catIds = sorted(cocoGt.getCatIds())
+
+## find cocoeval.py
+    user@server:~/your path/nanodet$ python3
+    >>> import pycocotools.cocoeval
+    >>> pycocotools.__file__
+    '/your path/python3.6/site-packages/pycocotools/'
 ## config
     num_classes: 2
     class_names: ['person', 'nonhuman']
