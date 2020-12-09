@@ -27,4 +27,5 @@ self.params.catIds = [0,1] #sorted(cocoGt.getCatIds())
 
 original line: self.params.catIds = sorted(cocoGt.getCatIds())
 
-## If I can help you, please give me a star.
+## If I can help you, please give me a star :star2::star2::star2:
+my csdn: https://blog.csdn.net/yyqq7226741/article/details/110918317
