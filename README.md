@@ -8,15 +8,15 @@ if category is two, then id index is [0,1], as following:
 ## modified two lines in coco.py to training on line, while not change to label
 117th line added
 
-        # 2 classes label
+    # 2 classes label
         
-        lablist=ann['labels']
+    lablist=ann['labels']
         
-        twolist=np.array([1 if i !=0 else i for i in lablist])
+    twolist=np.array([1 if i !=0 else i for i in lablist])
         
 126th line modified
 
-        gt_labels=twolist
+    gt_labels=twolist
         
 original line: gt_labels=ann['labels']
 ## modified the 26th line in coco_detection.py
@@ -27,6 +27,8 @@ original line: self.cat_ids = dataset.cat_ids
 self.params.catIds = [0,1] #sorted(cocoGt.getCatIds())
 
 original line: self.params.catIds = sorted(cocoGt.getCatIds())
-
+## config
+    num_classes: 2
+    class_names: ['person', 'nonhuman']
 ## If I can help you, please give me a star :star2::star2::star2:
 my csdn: https://blog.csdn.net/yyqq7226741/article/details/110918317
