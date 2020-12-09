@@ -26,3 +26,5 @@ original line: self.cat_ids = dataset.cat_ids
 self.params.catIds = [0,1] #sorted(cocoGt.getCatIds())
 
 original line: self.params.catIds = sorted(cocoGt.getCatIds())
+
+## If I can help you, please give me a star.
