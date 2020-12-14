@@ -19,7 +19,7 @@ if category is two, then id index is [0,1], as following:
     gt_labels=twolist
         
 original line: gt_labels=ann['labels']
-## modified the 26th line in coco_detection.py
+## modified the 26th line in nanodet/evaluator/coco_detection.py
 self.cat_ids = [0, 1] ##Custom category index
 
 original line: self.cat_ids = dataset.cat_ids
